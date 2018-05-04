@@ -5,8 +5,15 @@
      * Вывести на экран текущее название дня недели, название месяца и свое имя.
      * Каждое слово должно быть в отдельной строке.
      */
-    var text = ("Thursday\nApril\nAla");
-    alert (text);
+    var date = new Date();
+    var options = {
+        day: 'numeric',
+        weekday: 'long',
+        month: 'long'
+    };
+    var text = ('Ala');
+    alert( date.toLocaleString('ru', options)+'\n'+text );
+
 </script>
 </body>
 </html>
