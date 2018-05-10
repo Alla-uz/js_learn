@@ -1,0 +1,20 @@
+<html>
+<body>
+<script type="text/javascript">
+    /**
+     * Пользователь вводит количество дней, указывает процент скидки и вводит сумму.
+     * Рассчитать прибыль, если за каждый день сумма увеличивается на 3 $  и затем применяется скидка,
+     * то есть итоговая сумма еще увеличивается на данное число процентов.
+     */
+    var pringCharacterToPage = function (character) {
+        document.write('<span style="color:#ffafa3;">'+character+'</span>');
+    };
+    var d = 5;
+    var p = 3;
+    var s = 30;
+    var w = ((s+3)*d)*0.03;
+    var r = ((s+3)*d)-w;
+    document.write(r);
+</script>
+</body>
+</html>
