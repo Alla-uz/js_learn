@@ -1,0 +1,16 @@
+<html>
+<body>
+<script type="text/javascript">
+    /**
+     *  Дано четырехзначное число.
+     *  Определите, есть ли одинаковые цифры в нем.
+     */
+    var n = 1685;
+    var n1 = Math.floor(n / 1000);
+    var n2 = Math.floor((n%1000)/100);
+    var n3 = Math.floor((n%100)/10);
+    var n4 = n%10;
+    if (n1===n2 || n1===n3 || n1===n4 || n2===n3 || n2===n4 || n3===n4){alert ('yes');}
+</script>
+</body>
+</html>

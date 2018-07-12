@@ -5,11 +5,15 @@
      *  Дано трехзначное число.
      *  Переставьте первую и последнюю цифры.
      */
-    var n = 654;
-    var n1 = n / 10 / 10 % 10;
-    var n2 = n / 10 % 10;
-    var n3 = n  % 10;
-    if (nn === n1*100 + n2*10 + n3){alert (nn);}
+    var target = 365;
+    var result = 0;
+    var i = 0;
+    while (target > 0) {
+        var tmp = target % 10;
+        result = result * 10 + tmp;
+        target = Math.floor(target / 10);
+    }
+    alert(result);
 </script>
 </body>
 </html>
